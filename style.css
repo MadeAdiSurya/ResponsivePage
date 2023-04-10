@@ -70,6 +70,13 @@ body {
   width: 1134px;
   z-index: 100;
   margin-bottom: 0;
+  transition: all 300ms ease;
+}
+
+.nav.scrolled {
+  background: var(--black);
+  box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .nav .logo {
@@ -91,6 +98,14 @@ body {
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+  transition: 100ms ease;
+}
+
+.nav ul li a:hover {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--orange);
 }
 
 header {
@@ -412,4 +427,113 @@ section p {
 
 .course-page .wrapper {
   position: relative;
+}
+
+.app-buttons {
+  margin: 0;
+  padding: 100px 0;
+}
+
+.app-buttons h2,
+.app-buttons p {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.app-buttons .list-app {
+  padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.app-buttons .app-btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 31px;
+  background: #000000;
+  gap: 14px;
+}
+.app-buttons .app-btn span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+footer {
+  background: var(--black);
+  color: #fff;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 16px 0;
+}
+
+footer .footer-options .links h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #da722c;
+}
+
+footer .footer-options .links ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+footer .footer-options .social-media {
+  margin-left: 32px;
+}
+footer .footer-options .social-media a {
+  margin-right: 28px;
+}
+footer .footer-options {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer form {
+  margin-left: 32px;
+  margin-top: 16px;
+  position: relative;
+}
+
+footer form input {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+footer .submit-btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  padding: 6px 32px;
+  background: var(--dark-blue);
+  border-radius: 8px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
 }
